@@ -1,15 +1,35 @@
 import React from 'react';
 import { Text, Image, StyleSheet, TouchableOpacity,Dimensions } from "react-native";
 
-function ContentButton({ navigation, title, navigateName }){
+function ContentButton({ navigation, title, navigateName,icon }){
+const getImage=(icon)=>{
+  switch (icon){
+    case "rules":
+      return require("../../assets/rules.png");
+    case "calender":
+      return require("../../assets/calender.png");
+    case "prayer":
+      return require("../../assets/prayer.png");
+    case "counter":
+      return require("../../assets/counter.png");
+    case "evening":
+      return require("../../assets/evening.png");
+    case "morning":
+      return require("../../assets/morning.png");
+    case "broadcast":
+      return require("../../assets/broadcast.png");
+    default:
+      return  require("../../assets/homeIcon.png");
+  }
 
+}
     const handlePress=()=>{
         navigation.navigate(navigateName);
     }
     return(
     <TouchableOpacity style={styles.contentBtn} onPress={handlePress}>
     <Image
-      source={require("../../assets/homeIcon.png")}
+      source={getImage(icon)}
       style={styles.homeIcon}
     />
     <Text style={styles.text}>{title}</Text>

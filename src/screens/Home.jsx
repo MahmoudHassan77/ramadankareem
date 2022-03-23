@@ -17,7 +17,7 @@ function Home({navigation}) {
     setSound(sound);
     console.log("Playing Sound");
     await sound.playAsync();
-    navigation.navigate('Details');
+    navigation.navigate('Content');
   }
 
   useEffect(() => {

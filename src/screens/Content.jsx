@@ -6,37 +6,44 @@ const DATA = [
     {
       id: 'btn1',
       title: 'أحكام الصيام',
-      navigate: 'SyamRules'
+      navigate: 'SyamRules',
+      icon:"rules"
     },
     {
       id: 'btn2',
       title: 'الإمساكية',
-      navigate: 'Calender'
+      navigate: 'Calender',
+      icon:"calender"
     },
     {
       id: 'btn3',
       title: 'أدعية الرسول',
-      navigate: 'ProfitPrayer'
+      navigate: 'ProfitPrayer',
+      icon:"prayer"
     },
     {
       id: 'btn4',
       title: 'السبحة الإلكترونية',
-      navigate: 'Counter'
+      navigate: 'Counter',
+      icon:"counter"
     },
     {
         id: 'btn5',
         title: 'أذكار المساء',
-        navigate: 'SyamRules'
+        navigate: 'Evenning',
+        icon:"evening"
       },
       {
         id: 'btn6',
         title: 'أذكار الصباح',
-        navigate: 'Calender'
+        navigate: 'Mornning',
+        icon:"morning"
       },
       {
         id: 'btn7',
         title: 'الإذاعة',
-        navigate: 'ProfitPrayer'
+        navigate: 'Broadcast',
+        icon:"broadcast"
       },
 
   ];
@@ -48,7 +55,7 @@ function Content({navigation}) {
       }, [navigation]);
 
       const renderItem =({item})=>(
-          <ContentButton title={item.title} navigateName={item.navigate} />
+          <ContentButton title={item.title} navigateName={item.navigate} icon={item.icon} navigation={navigation} />
       )
 
     return ( 
