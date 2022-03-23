@@ -2,12 +2,12 @@ import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 
- function ProfitPrayer({navigation}) {
+ function Morning({navigation}) {
     React.useLayoutEffect(() => {
         navigation.setOptions({headerShown: false});
       }, [navigation]);
   return (
-    <Text>ProfitPrayer</Text>
+    <Text>Morning</Text>
   )
 }
-export default ProfitPrayer;
+export default Morning;

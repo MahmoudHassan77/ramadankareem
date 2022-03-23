@@ -30,13 +30,13 @@ const DATA = [
     {
         id: 'btn5',
         title: 'أذكار المساء',
-        navigate: 'Evenning',
+        navigate: 'Evening',
         icon:"evening"
       },
       {
         id: 'btn6',
         title: 'أذكار الصباح',
-        navigate: 'Mornning',
+        navigate: 'Morning',
         icon:"morning"
       },
       {
