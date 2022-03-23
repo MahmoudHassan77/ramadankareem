@@ -20,12 +20,12 @@ const Root =()=>(
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Content" component={Content} />
         <Stack.Screen name="Counter" component={Counter} />
-        <Stack.Screen name="Counter" component={SyamRules} />
-        <Stack.Screen name="Counter" component={Calender} />
-        <Stack.Screen name="Counter" component={Morning} />
-        <Stack.Screen name="Counter" component={Evening} />
-        <Stack.Screen name="Counter" component={ProfitPrayer} />
-        <Stack.Screen name="Counter" component={Broadcast} />
+        <Stack.Screen name="SyamRules" component={SyamRules} />
+        <Stack.Screen name="Calender" component={Calender} />
+        <Stack.Screen name="Morning" component={Morning} />
+        <Stack.Screen name="Evening" component={Evening} />
+        <Stack.Screen name="ProfitPrayer" component={ProfitPrayer} />
+        <Stack.Screen name="Broadcast" component={Broadcast} />
       </Stack.Navigator>
     </NavigationContainer>
 );

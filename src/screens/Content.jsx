@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList, Dimensions } from "react-native";
+import { StyleSheet, Text, View, ImageBackground, FlatList, Dimensions,Image } from "react-native";
 import  ContentButton  from '../components/ContentButton';
 
 const DATA = [
@@ -59,13 +59,13 @@ function Content({navigation}) {
       )
 
     return ( 
-    <View style={styles.container}>
-        <Image
-          source={require("../../assets/homeBck.jpg")}
-          style={styles.backgroundImage}
-        />
+      <ImageBackground blurRadius={10} source={require("../../assets/homeBck.jpg")} style={styles.imgContainer}>
+       <View style={styles.container}>
         <View style={styles.details}>
-        <View style={styles.logo}><Text style={styles.logoText}>شركة الفرسان </Text></View>
+        <View style={styles.logo}>
+          <Image style={styles.logoImg} source={require("../../assets/company.jpg")} ></Image>
+          <Text style={styles.logoText}>برعاية مهندس: أحمد سمير</Text>
+          </View>
         <View style={styles.list}>
         <FlatList
        contentContainerStyle={styles.flatList} 
@@ -78,6 +78,7 @@ function Content({navigation}) {
         </View>
       
       </View> 
+      </ImageBackground>
       );
 }
 
@@ -90,12 +91,27 @@ const styles = StyleSheet.create({
       alignItems: "center",
       justifyContent: "center",
     },
+    imgContainer:{
+      flex: 1,
+      backgroundColor: '#3A0CA3',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    Image: {
+      width:274,
+      height:274
+    },
+    logoImg:{
+      width:80,
+      height:80,
+      marginBottom:3
+    },
     details:{
         width:Dimensions.get('window').width,
         height:Dimensions.get('window').height,
         position:"absolute",
         display:"flex",
-       flexDirection:"column",
+        flexDirection:"column",
     },
     logo:{
         width:"100%",
@@ -104,6 +120,7 @@ const styles = StyleSheet.create({
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
+        // flexDirection:"row-reverse",
         // borderColor:"#000",
         // borderWidth:1,
         borderBottomEndRadius:70,
@@ -111,9 +128,8 @@ const styles = StyleSheet.create({
         backgroundColor:"#FFB833",
     },
     logoText:{
-        fontSize:30,
-        fontWeight:"bold",
-        color:"#fff",
+        fontSize:15,
+        color:"#012B67",
     },
     flatList:{
         flexDirection : "row",
