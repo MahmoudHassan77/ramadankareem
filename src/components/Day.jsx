@@ -2,12 +2,12 @@ import * as React from "react"
 import Svg, { Defs, G, Rect, Text, TSpan } from "react-native-svg"
 /* SVGR has dropped some elements not supported by react-native-svg: style */
 
-function DoaaNumber(props) {
+function Day(props) {
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
-      width={35.698}
-      height={35.698}
+      width={81.698}
+      height={81.698}
       viewBox="0 0 29.698 29.698"
       stroke="#ffa90f"
       {...props}
@@ -25,15 +25,15 @@ function DoaaNumber(props) {
         x="100"
         y="100"
         transform="translate(7 10)"
-        fontSize={props.doaaNumber>99?10:13}
+        fontSize={props.dayNumber>99?10:13}
         textAnchor="middle"
       >
         <TSpan x={8} y={10} textAnchor="middle">
-         { props.doaaNumber}
+         { props.dayNumber}
         </TSpan>
       </Text>
     </Svg>
   )
 }
 
-export default DoaaNumber
+export default Day

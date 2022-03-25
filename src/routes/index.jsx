@@ -10,6 +10,7 @@ import Morning from '../screens/Morning';
 import Evening from '../screens/Evening';
 import ProfitPrayer from '../screens/ProfitPrayer';
 import Broadcast from '../screens/Broadcast';
+import CalenderDetails from '../screens/CalenderDetails';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ const Root =()=>(
         <Stack.Screen name="Evening" component={Evening} />
         <Stack.Screen name="ProfitPrayer" component={ProfitPrayer} />
         <Stack.Screen name="Broadcast" component={Broadcast} />
+        <Stack.Screen name="CalenderDetails" component={CalenderDetails} />
       </Stack.Navigator>
     </NavigationContainer>
 );
