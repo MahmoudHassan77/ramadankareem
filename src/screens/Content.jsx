@@ -64,7 +64,7 @@ function Content({navigation}) {
         <View style={styles.details}>
         <View style={styles.logo}>
           <Image style={styles.logoImg} source={require("../../assets/company.jpg")} ></Image>
-          <Text style={styles.logoText}>برعاية مهندس: أحمد سمير</Text>
+          <Text style={styles.logoText}>برعاية مهندس: أحمد متولي</Text>
           </View>
         <View style={styles.list}>
         <FlatList

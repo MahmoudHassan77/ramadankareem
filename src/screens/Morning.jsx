@@ -87,7 +87,7 @@ import { StyleSheet, Text, View, ImageBackground, ScrollView } from "react-nativ
       <Text style={[styles.text,styles.secText]}>حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ. لَمْ يَأْتِ أَحَدٌ يَوْمَ الْقِيَامَةِ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا أَحَدٌ قَالَ مِثْلَ مَا قَالَ أَوْ زَادَ عَلَيْهِ.</Text>
       <Text style={styles.text}>أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ </Text>
       <Text style={[styles.text,styles.textColor]}>(مائة مرة)</Text>
-      <Text style={styles.text}>مائة حسنة، ومُحيت عنه مائة سيئة، وكانت له حرزاً من الشيطان حتى يمسى.</Text>
+      <Text style={[styles.text,styles.secText]}>مائة حسنة، ومُحيت عنه مائة سيئة، وكانت له حرزاً من الشيطان حتى يمسى.</Text>
       </ScrollView>
     </ImageBackground>
   )
